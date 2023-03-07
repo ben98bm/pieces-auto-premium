@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b2da9897.css",
+    "main.js": "/static/js/main.43b450da.js",
+    "static/js/787.cad63e1b.chunk.js": "/static/js/787.cad63e1b.chunk.js",
+    "static/media/Moteur-et-transmission.jpg.webp": "/static/media/Moteur-et-transmission.jpg.24dd6c7eb50c7def0a10.webp",
+    "static/media/Servico-Img1-2.jpg": "/static/media/Servico-Img1-2.fd24e2a281bb6e4d894e.jpg",
+    "index.html": "/index.html",
+    "main.b2da9897.css.map": "/static/css/main.b2da9897.css.map",
+    "main.43b450da.js.map": "/static/js/main.43b450da.js.map",
+    "787.cad63e1b.chunk.js.map": "/static/js/787.cad63e1b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b2da9897.css",
+    "static/js/main.43b450da.js"
+  ]
+}
