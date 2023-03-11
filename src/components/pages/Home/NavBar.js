@@ -14,129 +14,7 @@ function NavBar() {
     return (
         <>
         <Header />
-        <section class="container2">
-            <div class="container px-5">
-                <div class="row gx-5 align-items-center">
-                    <div class="col50">
-                        <div class="mb-1 mb-lg-0 text-center text-lg-start">
-                            <img src="images/Signature-R-RVB.png" alt="logo" />
-                            <br/>
-                            <br/>
-                            <p class="lead fw-normal text-muted mb-5"><strong>PIÈCES AUTO PREMIUM</strong> garantit 
-                                aux professionnels de l’automobile le choix et la disponibilité 
-                                d’une très large gamme de pièces auto pour toutes les marques européennes, 
-                                permettant ainsi une remise en circulation rapide du parc automobile.
-                            </p>
-                            <div class="d-flex flex-column flex-lg-row align-items-center">
-                                <a href="#" class="btn1">Devis pieces auto</a>
-                                <a href="#" class="btn2">Diagnostic auto</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col50">
-                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                            <ol class="carousel-indicators">
-                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                            </ol>
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                <img class="d-block w-100" src="images/pièces-détachées.jpg" alt="First slide" />
-                                </div>
-                                <div class="carousel-item">
-                                <img class="d-block w-100" src="images/valise-diagnostic-auto-multimarque.jpg" alt="Second slide" />
-                                </div>
-                                <div class="carousel-item">
-                                <img class="d-block w-100" src="images/Diagnostique.jpg.avif" alt="Third slide" />
-                                </div>
-                            </div>
-                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="py-4 bg-soft-warning">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6 col-lg mb-4 mb-lg-0 d-flex flex-center">
-                        <img src="images/feb.png" height={"38"}></img>
-                    </div>
-                    <div class="col-sm-6 col-lg mb-4 mb-lg-0 d-flex flex-center">
-                        <img src="images/bosch.png" height={"38"}></img>
-                    </div>
-                    <div class="col-sm-6 col-lg mb-3 mb-lg-0 d-flex flex-center">
-                        <img src="images/behr.png" height={"38"}></img>
-                    </div>
-                    <div class="col-sm-6 col-lg mb-4 mb-lg-0 d-flex flex-center">
-                        <img src="images/sach.png" height={"38"}></img>
-                    </div>
-                    <div class="col-sm-6 col-lg mb-4 mb-lg-0 d-flex flex-center">
-                        <img src="images/hella.png" height={"38"}></img>
-                    </div>
-                    <div class="col-sm-6 col-lg mb-4 mb-lg-0 d-flex flex-center">
-                        <img src="images/vemo.png" height={"38"}></img>
-                    </div>
-                </div>
-            </div>
-        </section>
-        {/* <section class="banniere" id="banniere">
-            <div class="contenu">
-                <h2>PIECES AUTO PREMIUM</h2>
-                <p>
-                PIÈCES AUTO PREMIUM est une société de droit sénégalais fondée 
-                par de jeunes entrepreneurs passionnés par le secteur de l’automobile.
-                </p>
-                <a href="#" class="btn1">Devis pieces auto</a>
-                <a href="#" class="btn2">Diagnostic auto</a>
-            </div>
-        </section> */}
-        
-        <section class="apropos" id="apropos">
-            <div class="row">
-                <div class="col50">
-                    <h2 class="titre-texte"><span>A</span> Propos De Nous</h2>
-                    <p>
-                    Notre mission est d’apporter aux automobilistes des pièces d’origine 
-                    venant du marché européen qui leur assurent sécurité et fiabilité pour 
-                    leurs trajets quotidiens, ainsi que la réduction significative du nombre 
-                    de pannes de leurs voitures. Cette approche permet à PIÈCES AUTO PREMIUM 
-                    de préserver le budget annuel de leurs clients affecté à la réparation et 
-                    l’entretien de leurs voitures. Nous avons pour but d’acheminer des pièces de 
-                    qualité conformes et fiables de grandes marques européennes avec comme objectif 
-                    de garantir la provenance d’origine.
-                    Nous luttons activement contre la vente des pièces automobiles 
-                    issue de la contrefaçon dont les pièces ont une durée de vie limitée et 
-                    conduisent les automobilistes à se rendre régulièrement chez leurs mécaniciens 
-                    entraînant des coûts répétitifs exorbitants
-
-                    </p> <br/>
-                    <p>
-                    Pour avoir de plus amples informations sur nos activités, n’hésitez pas à contacter un de nos commerciaux
-                    qui se fera un plaisir de répondre à toutes vos questions. Il y a plusieurs façons de formuler votre 
-                    demande de devis, dans tous les cas, pensez à avoir la carte grise du véhicule à 
-                    portée de main.Vous rendre à la rubrique «DEVIS», remplir le formulaire de demande 
-                    de devis et nous l’envoyer. Nous vous contacterons le plus rapidement possible pour 
-                    vous communiquer la disponibilité des pièces, ainsi que leurs coûts.
-                    </p>
-
-                </div>
-                <div class="col50">
-                    <div class="img">
-                        <img alt="content" class="object-cover object-center h-full w-full" src="images/Pieces-auto.jpg" />
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="expert" id="expert">
+        {/* <section class="expert" id="expert">
             <div class="titre">
                 <h2 class="titre-texte"><span>N</span>os <span>S</span>ervices</h2>
                 <p class="titre2 text-dark">PIÈCES AUTO PREMIUM garantit aux professionnels de 
@@ -147,14 +25,14 @@ function NavBar() {
             <div class="col-md-12 row row-cols-1 row-cols-lg-12 align-items-stretch g-4 py-5">
                 <div class="col-md-6">
                     <div class="card3 card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" >
-                    <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+
                         <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Pieces detachees</h3>
                             <p class="flex text-light align-items-center">
                                 <strong>PIÈCES AUTO PREMIUM</strong> vous propose des pièces automobiles neuves et d’occasion d’origine. 
                                 Notre société vous garantit l’origine et la qualité des pièces automobiles achetées a
                                 ux tarifs les plus concurrentiels.
                             </p>
-                    </div>
+
                     </div>
                 </div>
 
@@ -172,7 +50,7 @@ function NavBar() {
                     </div>
                 </div>
             </div>
-        </section>
+        </section> */}
         {/* <section class="menu" id="menu">
             <div class="titre">
                 <h2 class="titre-texte"><span>C</span>atalogue <span>D</span>e <span>P</span>ieces</h2>
@@ -470,29 +348,81 @@ function NavBar() {
                 </div>
             </div>
         </section> */}
-        <div>
-            <section class="contact" id="contact">
-                <div class="titre noir">
-                    <h2 class="titre-text"><span>C</span>ontact</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+        <section id="contact" class="contact">
+            <div class="container" data-aos="fade-up">
+
+                <div class="section-title">
+                    <h2>Contact</h2>
+                <p>
+                    Nos équipes sont là pour vous fournir des informations 
+                    techniques précises et vous aider à identifier la pièce 
+                    dont vous avez besoin.
+                </p>
                 </div>
-                <div class="contactform">
-                    <h3>Envoyer un message</h3>
-                    <div class="inputboite">
-                        <input type="text" placeholder="Nom" />
+
+                <div class="row">
+
+                <div class="col-lg-5 d-flex align-items-stretch">
+                    <div class="info">
+                    <div class="address">
+                        <i class="bi bi-geo-alt"></i>
+                        <h4>Emplacement:</h4>
+                        <p>
+                            Villa 70, Rue 79 X 276 Cité Asecna <br /> 
+                            Ouakam, Dakar Sénégal
+                        </p>
                     </div>
-                    <div class="inputboite">
-                        <input type="text" placeholder="email" />
+
+                    <div class="email">
+                        <i class="bi bi-envelope"></i>
+                        <h4>Email:</h4>
+                        <p>contact@piecesauto-premium.com</p>
                     </div>
-                    <div class="inputboite">
-                        <textarea placeholder="message"></textarea>
+
+                    <div class="phone">
+                        <i class="bi bi-phone"></i>
+                        <h4>Telephone:</h4>
+                        <p>(221) 78 113 97 97, (221) 33 868 53 81</p>
                     </div>
-                    <div class="inputboite">
-                        <input type="submit" value="envoyer" />
+
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3858.687829823664!2d-17.491682785158225!3d14.730232989720026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2ssn!4v1678505409241!5m2!1sfr!2ssn" frameborder="0" style={{border:"0", width: "100%",  height: "290px"}} allowfullscreen></iframe>
                     </div>
+
                 </div>
-            </section>
-        </div>
+
+                <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+                    <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                        <label for="name">Votre Nom</label>
+                        <input type="text" name="name" class="form-control" id="name" required />
+                        </div>
+                        <div class="form-group col-md-6">
+                        <label for="name">Address Email</label>
+                        <input type="email" class="form-control" name="email" id="email" required />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Object</label>
+                        <input type="text" class="form-control" name="subject" id="subject" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Message</label>
+                        <textarea class="form-control" name="message" rows="10" required></textarea>
+                    </div>
+                    <div class="my-3">
+                        <div class="loading">Chargement</div>
+                        <div class="error-message"></div>
+                        <div class="sent-message">Votre Email a ete bien envoyer</div>
+                    </div>
+                    <div class="text-center"><button type="submit">Envoyer Votre Message</button></div>
+                    </form>
+                </div>
+
+                </div>
+
+            </div>
+        </section>
         </>
     );
 }

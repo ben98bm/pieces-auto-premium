@@ -16,7 +16,7 @@ header{
   position: fixed;
   top: 0%;
   left: 0%;
-  padding: 20px 10px;
+  padding: 10px 10px;
   width: 100%;
   z-index: 1;
   display: flex;
@@ -24,6 +24,42 @@ header{
   align-items: center;
   transition: 0.5s;
 }
+
+
+.logo2{
+  width: 50px;
+  height: 50px;
+  }
+
+
+.logo span{
+  color: #fb1f1f;
+}
+
+header.sticky{
+  background: #fff;
+  padding: 10px 10px;
+  box-shadow: 0px 5px 20px rgba(0,0,0, 0.05);
+}
+
+header.sticky .logo{
+  color: #000;
+}
+
+header.sticky .navbar li a {
+  color: #000;
+}
+
+header.sticky li a:hover{
+  color: #fb1f1f;
+  border-bottom: 2px solid #fb1f1f;
+}
+
+.container .row2 {
+  display: flex;
+  width: 100%;
+}
+
 
 .col50 .mb-1 img {
   max-height: 50px;
@@ -39,23 +75,6 @@ header{
 
 .carousel-item {
   height: 450px;
-}
-
-.logo2{
-width: 50px;
-height: 50px;
-}
-
-.logo{
-  color: #060606;
-  font-weight: bold;
-  font-size: 2em;
-  text-decoration: none;
-  padding-right: 400px;
-}
-
-.logo span{
-  color: #fb1f1f;
 }
 
 .navbar{
@@ -88,7 +107,7 @@ height: 50px;
 
 header .navbar li a:hover{
   color: #fb1f1f;
-  border-bottom: 2px solid #fb1f1f;
+  border-bottom: 2px solid #fbe91f;
 }
 
 .banniere{
@@ -148,6 +167,7 @@ header .navbar li a:hover{
 .btn1:hover{
 letter-spacing: 4px;
 }
+
 section{
   padding: 100px;
 }
@@ -199,9 +219,10 @@ section{
 
 .titre2{
   font-weight: bold;
-  margin-left: auto;
-  margin-right: auto;
-  width: 60em;
+  justify-content: center;
+  /* margin-left: auto;
+  margin-right: auto; */
+  width: 50em;
   text-align: center;
 }
 
@@ -438,161 +459,14 @@ section{
   font-size: 2em;
 }
 
-header.sticky{
-  background: #fff;
-  padding: 10px 10px;
-  box-shadow: 0px 5px 20px rgba(0,0,0, 0.05);
-}
-
-header.sticky .logo{
-  color: #000;
-}
-
-header.sticky .navbar li a {
-  color: #000;
-}
-
-header.sticky li a:hover{
-  color: #fb1f1f;
-  border-bottom: 2px solid #fb1f1f;
-}
-
-@media (max-width: 991px) {
-header, 
-header.sticky{
-  padding: 10px 20px;
-}
-
-header .navbar li{
-  margin-left: 0px;
-}
-
-header .navbar li a {
-  text-decoration: none;
-  color: #111;
-  font-size: 1.6em;
-  font-weight: 300;
-}
-
-.navbar{
-  display: none;
-}
-section{
-  padding: 20px;
-}
-
-header .navbar.active{
-  width: 100%;
-  height: calc(100% -68px);
-  position: fixed;
-  top: 68px;
-  left:0;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  background: #ffff;
-  align-items: center;
-}
-
-.menuToggle{
-  position: relative;
-  width: 40px;
-  height: 40px;
-  /* background-image: url(./images/menu.png); */
-  background-repeat: no-repeat;
-  background-position: center;
-  cursor: pointer;
-  background-size: 30px;
-}
-
-.menuToggle.active
-{
-  /* background-image: url(./images/close.png); */
-  background-size: 25px;
-  background-repeat: no-repeat;
-  background-origin: center;
-}
-
-header.sticky .menuToggle{
-  filter: invert(1);
-}
-
-
-.banniere .contenu h2{
-  font-size: 2em;
-}
-
-.row .col50 img{
-  margin-left: 18%;
-}
-
-.contenu p:nth-child(2){
-  font-size: 1.2em;
-}
-.expert{
-  margin-top: 0px;
-}
-
-.menu{
-  margin-top: 0px;
-}
-
-.row{
-  display: flex;
-  flex-direction: column;
-}
-
-
-
-.temoignage h2{
-  font-size: 2em;
-  text-align: center;
-}
-
-.temoignage p{
-text-align: center;
-}
-
-.contactform{
-  margin-left: 25%;
-}
-
-
-  .row .col50 {
-      position: relative;
-      width: 100%;
-      justify-content: center;
-      align-items: center;
-      margin-bottom: 30px;
+@media (max-width:1245px) {
+  .logo {
+    font-size: 1.8em;
   }
-
-  .row{
-      flex-direction: column;
+  header .navbar li a{
+    font-size: 0.6em;
   }
-}
-
-@media (max-width: 480px)
-{
-  .banniere .contenu h2{
-      font-size: 2.2em;
-      color: #fff;
-  }
-
-  .titre-text{
-      color: #000;
-      font-size: 2rem;
-      font-weight: 300;
-      text-transform: capitalize;
-  }
-
-  .temoignage h2 
-  {
-      font-size: 1.1em;
-  }
-
-  .temoignage p{
-      text-align: center;
-  }
+  
 }
 
 /* Futuread */
@@ -769,4 +643,214 @@ label{
 
 .container5 {
   padding-top: 100px;
+}
+
+/*RESPONSIVE */
+
+@media(max-width: 767px)
+{
+  .banniere .contenu h2{
+      font-size: 2.2em;
+      color: #fff;
+  }
+
+  .titre-text{
+      color: #000;
+      font-size: 2rem;
+      font-weight: 300;
+      text-transform: capitalize;
+  }
+
+  .temoignage h2 
+  {
+      font-size: 1.1em;
+  }
+
+  .temoignage p{
+      text-align: center;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 1388px) {
+  header, 
+  header.sticky{
+    padding: auto;
+  }
+  .col50 .mb-1 img {
+    padding-top: 10px;
+  }
+
+  .logo {
+    font-size: 0.9em;
+  }
+  
+  .logo2 {
+    height: 30px;
+    width: 30px;
+  }
+  
+  
+  header .navbar {
+    flex-direction:inherit;
+    align-items: center;
+  }
+  
+  
+  header .navbar li a {
+    display: auto;
+    color: #111;
+    font-size: 0.6em;
+  }
+  
+  .container .row2 {
+    display: flex;
+    width: 100%;
+  }
+  
+  .navbar{
+    display: none;
+  }
+  section{
+    padding: 20px;
+  }
+  
+  header .navbar.active{
+    width: 100%;
+    height: calc(100% -68px);
+    position: fixed;
+    top: 68px;
+    left:0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: #ffff;
+    align-items: center;
+  }
+  
+  .menuToggle{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    /* background-image: url(./images/menu.png); */
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    background-size: 30px;
+  }
+  
+  .menuToggle.active
+  {
+    /* background-image: url(./images/close.png); */
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-origin: center;
+  }
+  
+  header.sticky .menuToggle{
+    filter: invert(1);
+  }
+  
+  .col50 .mb-1 {
+    padding-top: 200px;
+    justify-content: center;
+  }
+  
+  .d-block {
+    height: 100px;
+    width: 100px;
+    border-radius: 10%;
+  }
+  
+  .col50 .mb-1 p{
+    font-size: 15px;
+  }
+  
+  .d-flex {
+    justify-content: center;
+  }
+  .d-flex a{
+    font-size: 10px;
+  }
+  
+  .banniere .contenu h2{
+    font-size: 2em;
+  }
+  
+  .row .col50 img{
+    margin-left: 18%;
+  }
+  
+  .contenu p:nth-child(2){
+    font-size: 1.2em;
+  }
+  .expert{
+    margin-top: 0px;
+  }
+  
+  .menu{
+    margin-top: 0px;
+  }
+  
+  .row{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  
+  .temoignage h2{
+    font-size: 2em;
+    text-align: center;
+  }
+  
+  .temoignage p{
+  text-align: center;
+  }
+  
+  .contactform{
+    margin-left: 25%;
+  }
+  
+  
+    .row .col50 {
+        position: relative;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+  
+    .row{
+        flex-direction: column;
+    }
+    div .row2 {
+      display: none;
+      width: auto;
+    }
+    .logo {
+      font-size: 1.8em;
+    }
+    header .navbar li a{
+      font-size: 0.6em;
+    }
+  }
+
+  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 992px) {
+
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .menuToggle.responsive {position: relative;}
+  .menuToggle.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .menuToggle.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
 }

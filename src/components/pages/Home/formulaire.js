@@ -1,4 +1,5 @@
-import React from "react";
+import React, {useState} from "react";
+import emailjs from 'emailjs-com';
 import Header from "./header";
 
 
@@ -18,23 +19,23 @@ function fomrulaire() {
                     </div>
                     <div class='row'>
                         <div class="col-lg-6">
-                            <form class="form-horizontal" role="form">
+                            <form action="script.php" method="post" class="form-horizontal" role="form">
                                 <div class="form-group">
                                     <label for="civilite" class="col-sm-2">Chassis (VIN) :</label>
                                     <div class="col-sm-8">
-                                        <input type="text" class="form-control form-control-lg" rows="3" lname="civilite;" id="civilite" required />
+                                        <input type="text" class="form-control form-control-lg" rows="3" lname="civilite;" pattern=".{17}" id="civilite" required />
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="nom" class="col-sm-2">Nom :</label>
                                     <div class="col-sm-8">
-                                        <input type="text" class="form-control form-control-lg" name="name" id="name" required />
+                                        <input type="text" class="form-control form-control-lg" name="name" id="nom" required />
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="prenom" class="col-sm-2">Prenom :</label>
                                     <div class="col-sm-8">
-                                        <input type="text" class="form-control form-control-lg" name="prenom" id="prenom" required />
+                                        <input type="text" class="form-control form-control-lg" name="prenom" id="email" required />
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -91,135 +92,17 @@ function fomrulaire() {
                                     <input type="text" class="form-control form-control-lg" name="pays" id="pays" />
                                 </div>
                             </div>
-                            <div class="form-group">
-                                <div class="checkbox inline">
-                                    <label>
-                                        <input type="checkbox" value="" checked />
-                                        <span class="cc"><i class="cc-icon glyphicon glyphicon-ok"></i></span> Option1
-                                    </label>
-                                </div>
-
-                                <div class="checkbox inline">
-                                    <label>
-                                        <input type="checkbox" value="" checked />
-                                        <span class="cc"><i class="cc-icon glyphicon glyphicon-ok"></i></span> Option 2
-                                    </label>
-                                </div>
-                                <div class="checkbox inline">
-                                    <label>
-                                        <input type="checkbox" value="" checked />
-                                        <span class="cc"><i class="cc-icon glyphicon glyphicon-ok"></i></span> Option 3
-                                    </label>
-                                </div>
-                            </div>
-
+    
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="form-heading">
-                                <span class="prg">Event</span>
-                            </div>
-                            <div>
-                                <div class="form-group">
-                                    <label for="programme" class="col-sm-2 control-label">Program</label>
-                                    <div class="col-sm-8">
-                                        <select class="form-control">
-                                            <option>1</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                            <option>4</option>
-                                            <option>5</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="origine" class="col-sm-2 control-label">Origin</label>
-                                    <div class="col-sm-8">
-                                        <select class="form-control">
-                                            <option>1</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                            <option>4</option>
-                                            <option>5</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="col-lg-6">
-
-                            <div class="form-heading">
-
-                                <span class="prg">Your choice</span>
-                            </div>
-
-                            <div>
-
-                                <div class="checkbox inline">
-                                    <label>
-                                        <input type="checkbox" value="" checked />
-                                        <span class="cc"><i class="cc-icon glyphicon glyphicon-ok"></i></span> studio
-                                    </label>
-                                </div>
-                                <div class="checkbox inline">
-                                    <label>
-                                        <input type="checkbox" value="" checked />
-                                        <span class="cc"><i class="cc-icon glyphicon glyphicon-ok"></i></span> 1 pièce
-                                    </label>
-                                </div>
-                                <div class="checkbox inline">
-                                    <label>
-                                        <input type="checkbox" value="" checked />
-                                        <span class="cc"><i class="cc-icon glyphicon glyphicon-ok"></i></span> 2 pièce
-                                    </label>
-                                </div>
-
-                                <div class="checkbox inline">
-                                    <label>
-                                        <input type="checkbox" value="" checked />
-                                        <span class="cc"><i class="cc-icon glyphicon glyphicon-ok"></i></span> 4 pièces
-                                    </label>
-                                </div>
-                                <div class="checkbox inline">
-                                    <label>
-                                        <input type="checkbox" value="" checked />
-                                        <span class="cc"><i class="cc-icon glyphicon glyphicon-ok"></i></span> 5 pièces
-                                    </label>
-                                </div>
-                                <div class="checkbox inline">
-                                    <label>
-                                        <input type="checkbox" value="" checked />
-                                        <span class="cc"><i class="cc-icon glyphicon glyphicon-ok"></i></span> 6 pièces
-                                    </label>
-                                </div>
-
-                                <div class="checkbox inline">
-                                    <label>
-                                        <input type="checkbox" value="" checked />
-                                        <span class="cc"><i class="cc-icon glyphicon glyphicon-ok"></i></span> maison
-                                    </label>
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                        <div class="col-xs-12">
-                            <div class="form-group">
-                                <label for="comment">Your Comment:</label>
-                                <textarea class="form-control" rows="5" id="comment"></textarea>
-                            </div>
-                        </div>
+                    
 
                         <div class="col-xs-12">
                         <button type="submit" class="btn btn-primary">Submit</button>
                         </div>
 
                     </div>
-                </div>
+                
             </form>
         </div>  
         </>
