@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min';
 
@@ -67,8 +68,8 @@ return (
                             permettant ainsi une remise en circulation rapide du parc automobile.
                         </h2>
                         <div class="d-flex flex-column flex-lg-row align-items-center">
-                            <a href="#" class="btn1">Devis pieces auto</a>
-                            <a href="#" class="btn2">Diagnostic auto</a>
+                            <Link to="/formulaire"><a href="#" class="btn1">Devis pieces auto</a></Link>
+                            <a class="btn2">Diagnostic auto</a>
                         </div>
                     </div>
                     <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">

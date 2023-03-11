@@ -6,8 +6,28 @@ import Header from "./header";
 function fomrulaire() {
     return(
         <>
+        <header id="header" class="fixed-top ">
+            <div class="container d-flex align-items-center">
+
+                <a href="index.html" class="logo me-auto"><img src="images/Logo-RVB.png" alt="" class="img-fluid" /></a>
+
+                {/* <h1 class="logo me-auto"><a><span>P</span>ieces <span>A</span>uto <span>P</span>remium</a></h1> */}
+
+                <nav id="navbar" class="navbar">
+                    <ul>
+                    <li><a class="nav-link scrollto active" href="#hero">Accueil</a></li>
+                    <li><a class="nav-link scrollto" href="#about">A Propos</a></li>
+                    <li><a class="nav-link scrollto" href="#aboutt">Services</a></li>
+                    <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+                    <li><a class="getstarted scrollto" href="#about">Get Started</a></li>
+                    </ul>
+                    <i class="bi bi-list mobile-nav-toggle"></i>
+                </nav>
+
+            </div>
+        </header>
         <div class="container5">
-            <Header />
+            {/* <Header /> */}
             <form class="form-horizontal" role="form">
                 <div class='container'>
                     <div class='row'>
