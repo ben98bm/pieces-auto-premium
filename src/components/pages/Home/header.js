@@ -142,7 +142,7 @@ return (
                 </div>
 
                 <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
-                    <img src="images/Pieces-auto.jpg" class="img-fluid" alt="" />
+                    <img src="images/S1-Enquete-exclusive-Pieces-detachees-comment-bien-les-choisir-et-eviter-les-pieges-558130.jpg" class="img-fluid" alt="" />
                 </div>
 
                 </div>
