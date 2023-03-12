@@ -354,9 +354,9 @@ function NavBar() {
                 <div class="section-title">
                     <h2>Contact</h2>
                 <p>
-                    Nos équipes sont là pour vous fournir des informations 
-                    techniques précises et vous aider à identifier la pièce 
-                    dont vous avez besoin.
+                     Pour avoir de plus amples informations sur nos activités, 
+                    n’hésitez pas à contacter un de nos commerciaux qui sefera 
+                    un plaisir de répondre à toutes vos questions.
                 </p>
                 </div>
 

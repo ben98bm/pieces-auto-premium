@@ -190,11 +190,11 @@ return (
                         <li><i class="bi bi-check-circle-fill"></i> Professionalisme</li>
                         <li><i class="bi bi-check-circle-fill"></i> Efficacite</li> 
                     </ul>
-                    <p>
+                    {/* <p>
                         Pour avoir de plus amples informations sur nos activités, 
                         n’hésitez pas à contacter un de nos commerciaux qui sefera 
                         un plaisir de répondre à toutes vos questions.
-                    </p>
+                    </p> */}
 
                     <br />
                     <div class="position-relative mt-4">
