@@ -33,40 +33,39 @@ return (
                 <a href="#" class="btn2">Diagnostic auto</a>
             </div>
         </section> */}
-        <header id="header" class="fixed-top ">
-            <div class="container d-flex align-items-center">
+            <header id="header" class="fixed-top ">
+                <div class="container d-flex align-items-center">
 
-                <a href="index.html" class="logo me-auto"><img src="images/Logo-RVB.png" alt="" class="img-fluid" /></a>
+                    <a class="logo me-auto"><img src="images/Logo-RVB.png" alt="" class="img-fluid" /></a>
 
-                {/* <h1 class="logo me-auto"><a><span>P</span>ieces <span>A</span>uto <span>P</span>remium</a></h1> */}
+                    {/* <h1 class="logo me-auto"><a><span>P</span>ieces <span>A</span>uto <span>P</span>remium</a></h1> */}
 
-                <nav id="navbar" class="navbar">
-                    <ul>
-                    <li><a class="nav-link scrollto active" href="#hero">Accueil</a></li>
-                    <li><a class="nav-link scrollto" href="#about">A Propos</a></li>
-                    <li><a class="nav-link scrollto" href="#aboutt">Services</a></li>
-                    <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-                    <li><a class="getstarted scrollto" href="#about">Get Started</a></li>
-                    </ul>
-                    <i class="bi bi-list mobile-nav-toggle"></i>
-                </nav>
+                    <nav id="navbar" class="navbar">
+                        <ul>
+                            <li><a class="nav-link scrollto active" href="#hero">Accueil</a></li>
+                            <li><a class="nav-link scrollto" href="#about">A Propos</a></li>
+                            <li><a class="nav-link scrollto" href="#aboutt">Services</a></li>
+                            <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+                            <li><a class="getstarted scrollto" href="#about">Get Started</a></li>
+                        </ul>
+                        <i class="bi bi-list mobile-nav-toggle"></i>
+                    </nav>
 
-            </div>
-        </header>
-
+                </div>
+            </header>
         <section id="hero" class="d-flex align-items-center">
 
             <div class="container">
                 <div class="row">
                     <div class="logo col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
-                        <img src="images/Signature-R-RVB.png" alt="logo" />
                         <br/>
-                        <h1><a><span>P</span>ieces <span>A</span>uto <span>P</span>remium </a></h1>
+                        <h1><a><span>P</span>ièces <span>A</span>uto <span>P</span>rémium </a></h1>
                         <h2>
                             garantit aux professionnels de l’automobile le choix et la disponibilité 
                             d’une très large gamme de pièces auto pour toutes les marques européennes, 
                             permettant ainsi une remise en circulation rapide du parc automobile.
                         </h2>
+                        <img src="images/Signature-J-RVB.png" alt="logo" />
                         <div class="d-flex flex-column flex-lg-row align-items-center">
                             <Link to="/formulaire"><a href="#" class="btn1">Devis pieces auto</a></Link>
                             <a class="btn2">Diagnostic auto</a>
@@ -79,19 +78,18 @@ return (
             </div>
 
         </section>
-
         <main id="main">
             <section id="clients" class="clients section-bg">
                 <div class="container">
 
                     <div class="row" data-aos="zoom-in">
 
-                    <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                    <div class="col-lg-3 col-md-6 col-6 d-flex align-items-center justify-content-center">
                         <img src="images/bosch.png" class="img-fluid" alt="" />
                     </div>
 
                     <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                        <img src="images/behr.png" class="img-fluid" alt="" />
+                        <img src="images/valeo.png" class="img-fluid" alt="" />
                     </div>
 
                     <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
@@ -106,9 +104,9 @@ return (
                         <img src="images/sach.png" class="img-fluid" alt="" />
                     </div>
 
-                    <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                    {/* <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
                         <img src="images/hella.png" class="img-fluid" alt="" />
-                    </div>
+                    </div> */}
 
                     </div>
 
@@ -125,24 +123,21 @@ return (
                 </div>
                 <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
                     <div class="content">
-                        <h3>Qui Somme Nous</h3>
-                        <h2>
-                            PIÈCES AUTO PREMIUM
-                            </h2>
+                        <h3>Qui Somme Nous ?</h3>
                         <p>
-                            est une société de droit sénégalais 
+                            <strong>PIÈCES AUTO PREMIUM</strong> est une société de droit sénégalais 
                             fondée par de jeunes entrepreneurs passionnés par le 
                             secteur de l’automobile.PIÈCES AUTO PREMIUM a pour but 
                             d’acheminer des pièces de qualité conformes et fiables 
                             de grandes marques européennes avec comme objectif de garantir 
                             la provenance d’origine.
                         </p>
-                        <div class="text-center text-lg-start">
-                            <a href="#" class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
+                        {/* <div class="text-center text-lg-start">
+                            <a href="#" data-bs-toggle="collapse" class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
                                 <span>Read More</span>
                             <i class="bi bi-arrow-right"></i>
                             </a>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
 
@@ -166,7 +161,7 @@ return (
 
                 <div class="row gy-4">
                 <div class="col-lg-6">
-                    <h2>Pieces Detachees</h2>
+                    <h2>Vente de Pièces Auto</h2>
                     <img src="images/Servico-Img1-2.jpg" class="img-fluid rounded-4 mb-4" alt="" />
                     <p class="fst-italic">
                     <strong 

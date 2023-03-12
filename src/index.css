@@ -671,7 +671,7 @@ label{
   }
 }
 
-@media(min-width: 768px) and (max-width: 1388px) {
+@media(min-width: 768px) and (max-width: 1024px) {
   header, 
   header.sticky{
     padding: auto;
@@ -764,12 +764,14 @@ label{
   .col50 .mb-1 p{
     font-size: 15px;
   }
-  
+ 
   .d-flex {
     justify-content: center;
   }
+
   .d-flex a{
     font-size: 10px;
+    width: 70%;
   }
   
   .banniere .contenu h2{
