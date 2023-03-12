@@ -2,6 +2,8 @@ import React, {useState} from "react";
 import emailjs from 'emailjs-com';
 import Header from "./header";
 
+import { Link } from "react-router-dom";
+
 
 function fomrulaire() {
     return(
@@ -9,7 +11,7 @@ function fomrulaire() {
         <header id="header" class="fixed-top ">
             <div class="container d-flex align-items-center">
 
-                <a href="index.html" class="logo me-auto"><img src="images/Logo-RVB.png" alt="" class="img-fluid" /></a>
+                <Link to="/#hero"><a class="logo me-auto"><img src="images/Logo-RVB.png" alt="" class="img-fluid" /></a></Link>
 
                 {/* <h1 class="logo me-auto"><a><span>P</span>ieces <span>A</span>uto <span>P</span>remium</a></h1> */}
 
