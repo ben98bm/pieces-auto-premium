@@ -169,7 +169,6 @@ return (
                         d’origine. Notre société vous garantit l’origine et la qualité des pièces 
                         automobiles achetées aux tarifs les plus concurrentiels. 
                     </p>
-                    <br />
                     <p>
                         Nous luttons activement contre la vente des pièces automobiles 
                         issue de la contrefaçon dont les pièces ont une durée de vie limitée 
@@ -188,7 +187,8 @@ return (
                     </p>
                     <ul>
                         <li><i class="bi bi-check-circle-fill"></i> Professionalisme</li>
-                        <li><i class="bi bi-check-circle-fill"></i> Efficacite</li> 
+                        <li><i class="bi bi-check-circle-fill"></i> Efficacité</li> 
+                        <li><i class="bi bi-check-circle-fill"></i> Fiabilité </li>
                     </ul>
                     {/* <p>
                         Pour avoir de plus amples informations sur nos activités, 

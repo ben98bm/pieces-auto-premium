@@ -9,6 +9,15 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
+#aboutt .container .col-lg-6 h2 {
+  padding-top: 40px;
+}
+
+#aboutt .container .col-lg-6 p {
+  text-align: justify;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #d5c7c7;
@@ -606,6 +615,7 @@ section {
   text-align: center;
 }
 
+
 .clients img {
   max-width: 50%;
   transition: all 0.4s ease-in-out;
@@ -637,6 +647,7 @@ section {
   list-style: none;
   padding: 0;
 }
+
 
 .about .content ul li {
   padding-left: 28px;
