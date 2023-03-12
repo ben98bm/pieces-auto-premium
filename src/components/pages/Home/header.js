@@ -72,7 +72,7 @@ return (
                         </div>
                     </div>
                     <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
-                        <img src="images/Pieces-auto.jpg" class="img-fluid animated" alt="" />
+                        <img src="images/LOGO-APR-PRODUITS.png" class="img-fluid animated" alt="" />
                     </div>
                 </div>
             </div>
@@ -162,7 +162,7 @@ return (
                 <div class="row gy-4">
                 <div class="col-lg-6">
                     <h2>Vente de Pièces Auto</h2>
-                    <img src="images/Servico-Img1-2.jpg" class="img-fluid rounded-4 mb-4" alt="" />
+                    <img src="images/car-body-disassembled-and-many-vehicles-parts.jpg" class="img-fluid rounded-4 mb-4" alt="" />
                     <p class="fst-italic">
                     <strong 
                         style={{fontWeight: "bold"}}>PIÈCES AUTO PREMIUM</strong> vous propose des pièces automobiles neuves et d’occasion 
