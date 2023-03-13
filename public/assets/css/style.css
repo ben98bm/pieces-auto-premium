@@ -18,15 +18,74 @@
   text-align: justify;
 }
 
+/*--------------------------------------------------------------
+# index Css
+--------------------------------------------------------------*/
+header.sticky{
+  background: #fff;
+  padding: 10px 10px;
+  box-shadow: 0px 5px 20px rgba(0,0,0, 0.05);
+}
+
+header.sticky .logo{
+  color: #000;
+}
+
+header.sticky .navbar li a {
+  color: #000;
+}
+
+header.sticky .navbar i {
+  color: #000;
+}
+
+header.sticky li a:hover{
+  color: #fb1f1f;
+  border-bottom: 2px solid #fbf01f;
+}
+
+.btn1{
+  font-size: 1em;
+  color: #d6caca;
+  font-weight: bold;
+  background: #fb1f1f;
+  padding: 10px 20px;
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.5s;
+  margin-left: 10px;
+  width: auto;
+  height: auto;
+}
+.btn2{
+  font-size: 1em;
+  font-weight: bold;
+  color: #1b1a1a;
+  background: #e7d211;
+  padding: 10px 20px;
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.5s;
+  margin-left: 10px;
+  width: auto;
+  height: auto;
+}
+
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Montserrat';
   color: #d5c7c7;
 }
 
-a {
+/* a {
   color: #47b2e4;
   text-decoration: none;
-}
+} */
 
 a:hover {
   color: #73c5eb;
@@ -122,6 +181,10 @@ h6 {
   padding: 15px 0;
 }
 
+.logo span{
+  color: #fb1f1f;
+}
+
 #header.header-scrolled,
 #header.header-inner-pages {
   background: rgba(40, 58, 90, 0.9);
@@ -185,9 +248,9 @@ h6 {
   align-items: center;
   justify-content: space-between;
   padding: 10px 0 10px 30px;
-  font-size: 15px;
+  font-size: 1.2em;
   font-weight: 500;
-  color: #fff;
+  color: #050505;
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -212,6 +275,7 @@ h6 {
   margin-left: 30px;
   border-radius: 50px;
   color: #000000;
+  text-decoration: none;
   font-size: 15px;
   border: 2px solid #e4df47;
   font-weight: 800 bold;
@@ -302,7 +366,7 @@ h6 {
   transition: 0.5s;
 }
 
-.mobile-nav-toggle.bi-x {
+.mobile-nav-toggle .bi-x {
   color: #fff;
 }
 
@@ -414,7 +478,7 @@ h6 {
 }
 
 #hero .container .row h2 {
-  color: black;
+  color: rgb(51, 50, 50);
   text-align: justify;
 }
 
@@ -432,9 +496,11 @@ h6 {
   font-size: 24px;
 }
 
-#hero .col-lg-6 img{
+/* #hero .col-lg-6 img{
   border-radius: 30%;
-}
+  height: auto;
+  max-width: 50%;
+} */
 
 #hero .btn-get-started {
   font-family: "Jost", sans-serif;
@@ -454,7 +520,7 @@ h6 {
   background: #209dd8;
 }
 
-#hero .btn-watch-video {
+/* #hero .btn-watch-video {
   font-size: 16px;
   display: flex;
   align-items: center;
@@ -474,7 +540,7 @@ h6 {
 
 #hero .btn-watch-video:hover i {
   color: #47b2e4;
-}
+} */
 
 #hero .animated {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
@@ -482,10 +548,9 @@ h6 {
 
 @media (max-width: 991px) {
   #hero {
-    height: 100vh;
+    height: 150vh;
     text-align: center;
   }
-
   #hero .animated {
     animation: none;
   }
@@ -495,39 +560,48 @@ h6 {
   }
 
   #hero .hero-img img {
-    width: 50%;
+    width: 80px;
   }
 }
 
 @media (max-width: 768px) {
   #hero h1 {
-    font-size: 28px;
+    display: inline;
+    font-size: 20px;
     line-height: 36px;
+    margin: 0 0 10px 0;
   }
+
+  #hero .container {
+  padding-top: 72px;
+}
 
   #hero h2 {
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 30px;
+    /* font-size: 30px; */
+    /* line-height: 30px; */
+    /* margin-bottom: auto; */
   }
 
   #hero .hero-img img {
-    padding-top: auto;
-    width: 30%;
+    width: 80%;
   }
 }
 
-@media (max-width: 575px) {
-  /* #hero .hero-img img {
-    width: 80%;
+@media (min-width: 575px) and (max-width: 576px) {
+  #hero .hero-img img {
+    width: 150%;
   }
 
   #hero .btn-get-started {
     font-size: 16px;
     padding: 10px 24px 11px 24px;
-  } */
+  }
   #hero h1 {
-    font-size: 28px;
+    font-size: 10px;
+    text-align: justify;
     line-height: 36px;
   }
 
@@ -1704,6 +1778,23 @@ section {
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
+.copyright{
+  padding: 20px 40px;
+  border-top: 2px solid rgba(0,0,0, 0.1);
+  background: rgba(228,222,222,);
+  text-align: center;
+}
+
+.copyright p:nth-child(1){
+  color: #333;
+}
+
+.copyright a {
+  color: #fb1f1f;
+  text-decoration: none;
+  font-weight: 600;
+  font-style: italic;
+}
 #footer {
   font-size: 14px;
   background: #37517e;

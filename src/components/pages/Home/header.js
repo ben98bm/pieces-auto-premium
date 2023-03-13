@@ -37,9 +37,7 @@ return (
                 <div class="container d-flex align-items-center">
 
                     <a class="logo me-auto"><img src="images/Logo-RVB.png" alt="" class="img-fluid" /></a>
-
                     {/* <h1 class="logo me-auto"><a><span>P</span>ieces <span>A</span>uto <span>P</span>remium</a></h1> */}
-
                     <nav id="navbar" class="navbar">
                         <ul>
                             <li><a class="nav-link scrollto active" href="#hero">Accueil</a></li>
@@ -50,14 +48,13 @@ return (
                         </ul>
                         <i class="bi bi-list mobile-nav-toggle"></i>
                     </nav>
-
                 </div>
             </header>
         <section id="hero" class="d-flex align-items-center">
 
             <div class="container">
                 <div class="row">
-                    <div class="logo col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+                    <div class="logo col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="400">
                         <br/>
                         <h1><a><span>P</span>ièces <span>A</span>uto <span>P</span>rémium </a></h1>
                         <h2>

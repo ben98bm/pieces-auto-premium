@@ -1,40 +1,18 @@
 
-*{
+/* {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
   font-family: 'poppins', sans-serif;
   scroll-behavior: smooth;
-}
+} */
 
-p{
+/* p{
   font-weight: 300;
+  font-size: 1.2em;
   color: #111;
-}
+} */
 
-header{
-  position: fixed;
-  top: 0%;
-  left: 0%;
-  padding: 10px 10px;
-  width: 100%;
-  z-index: 1;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  transition: 0.5s;
-}
-
-
-.logo2{
-  width: 50px;
-  height: 50px;
-  }
-
-
-.logo span{
-  color: #fb1f1f;
-}
 
 header.sticky{
   background: #fff;
@@ -50,9 +28,13 @@ header.sticky .navbar li a {
   color: #000;
 }
 
+header.sticky .navbar i {
+  color: #000;
+}
+
 header.sticky li a:hover{
   color: #fb1f1f;
-  border-bottom: 2px solid #fb1f1f;
+  border-bottom: 2px solid #fbf01f;
 }
 
 .container .row2 {
@@ -75,22 +57,6 @@ header.sticky li a:hover{
 
 .carousel-item {
   height: 450px;
-}
-
-.navbar{
-  display: flex;
-  position: relative;
-}
-
-.navbar li{
-  list-style: none;
-}
-
-.navbar a{
-  color: #000000;
-  text-decoration: none;
-  margin-left: 30px;
-  font-weight: 700;
 }
 
 .btn-reserve{
@@ -148,6 +114,8 @@ header .navbar li a:hover{
   letter-spacing: 2px;
   transition: 0.5s;
   margin-left: 10px;
+  width: auto;
+  height: auto;
 }
 .btn2{
   font-size: 1em;
@@ -162,10 +130,8 @@ header .navbar li a:hover{
   letter-spacing: 2px;
   transition: 0.5s;
   margin-left: 10px;
-}
-
-.btn1:hover{
-letter-spacing: 4px;
+  width: auto;
+  height: auto;
 }
 
 section{
@@ -307,8 +273,7 @@ section{
 }
 
 .temoignage{
-  /* background-image: url(./images/bg2.jpg); */
-  background-size: cover;
+    background-size: cover;
 }
 
 .temoignage .contenu{
@@ -376,7 +341,6 @@ section{
 }
 
 .contact{
-  /* background-image: url(./images/img-form.jpg); */
   background-size: cover;
   box-shadow: 2px 2px 12px rgba(0,0,0, 0.8);
   width: 100%;
@@ -454,21 +418,6 @@ section{
   font-style: italic;
 }
 
-.contact .titre-text span{
-  color: #fb1f1f;
-  font-size: 2em;
-}
-
-@media (max-width:1245px) {
-  .logo {
-    font-size: 1.8em;
-  }
-  header .navbar li a{
-    font-size: 0.6em;
-  }
-  
-}
-
 /* Futuread */
 
 .card2 {
@@ -508,10 +457,6 @@ body {
   border-bottom: 1px solid #e1e7ec;
 }
 
-a {
-  color: #0da9ef;
-  text-decoration: none !important;
-}
 
 .card-title2{
   font-size: 1em;
@@ -647,7 +592,7 @@ label{
 
 /*RESPONSIVE */
 
-@media(max-width: 767px)
+/* @media(max-width: 767px)
 {
   .banniere .contenu h2{
       font-size: 2.2em;
@@ -669,19 +614,15 @@ label{
   .temoignage p{
       text-align: center;
   }
-}
+} */
 
-@media(min-width: 768px) and (max-width: 1024px) {
+/* @media(min-width: 768px) and (max-width: 1024px) {
   header, 
   header.sticky{
-    padding: auto;
+    max-width: 100%;
   }
   .col50 .mb-1 img {
     padding-top: 10px;
-  }
-
-  .logo {
-    font-size: 0.9em;
   }
   
   .logo2 {
@@ -731,7 +672,6 @@ label{
     position: relative;
     width: 40px;
     height: 40px;
-    /* background-image: url(./images/menu.png); */
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
@@ -740,7 +680,6 @@ label{
   
   .menuToggle.active
   {
-    /* background-image: url(./images/close.png); */
     background-size: 25px;
     background-repeat: no-repeat;
     background-origin: center;
@@ -835,15 +774,11 @@ label{
     header .navbar li a{
       font-size: 0.6em;
     }
-  }
+  } */
 
-  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 992px) {
-
-}
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
   .menuToggle.responsive {position: relative;}
   .menuToggle.responsive a.icon {
     position: absolute;
@@ -855,4 +790,4 @@ label{
     display: block;
     text-align: left;
   }
-}
+} */
