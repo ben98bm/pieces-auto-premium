@@ -1,16 +1,58 @@
 import React, { useState } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min';
-import { Button } from 'react-bootstrap';
 import Header from "./header";
+import emailjs from "@emailjs/browser";
+import axios from 'axios';
+import { useHistory } from 'react-router-dom';
 
 function NavBar() {
     const [showMore, setShowMore] = useState(false);
+    const history = useHistory();
 
     const handleShowMoreClick = () => {
         setShowMore(true);
         setShowMore(!showMore);
     };
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [subject, setSubject] = useState('');
+    const [message, setMessage] = useState('');
+    const [successMessage, setSuccessMessage] = useState('');
+    const [errorMessage, setErrorMessage] = useState('');
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        const serviceId = 'service_3r3sctu';
+        const templateId = 'template_kppyrlg';
+        const userId = '9JEDgP2zfjGmPW_Ln';
+
+        emailjs.send(serviceId, templateId, {
+        name,
+        email,
+        subject,
+        message,
+        }, userId)
+        .then((response) => {
+            setSuccessMessage('votre message a bien été envoyé.');
+            setName('');
+            setEmail('');
+            setSubject('');
+            setMessage('');
+            history.push("/#about");
+        }, (error) => {
+            setErrorMessage('votre message n\'a pas été envoyé');
+        });
+
+        axios.post('/contact-form.php', { name, email, message, subject })
+        .then((response) => {
+            console.log(response);
+        })
+        .catch((error) => {
+            console.log(error);
+        });
+    };
+
     return (
         <>
         <Header />
@@ -391,29 +433,28 @@ function NavBar() {
                 </div>
 
                 <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-                    <form id="contact-form" action="./contact-form.php" method="POST" role="form" class="php-email-form">
+                    <form onSubmit={handleSubmit} id="contact-form" class="php-email-form">
                     <div class="row">
                         <div class="form-group col-md-6">
-                        <label for="name">Votre Nom</label>
-                        <input type="text" name="name" class="form-control" id="name" required />
+                        <label htlmfor="name">Votre Nom</label>
+                        <input type="text" name="name" value={name} onChange={(event) => setName(event.target.value)} class="form-control" id="name" required />
                         </div>
                         <div class="form-group col-md-6">
-                        <label for="name">Address Email</label>
-                        <input type="email" class="form-control" name="email" id="email" required />
+                        <label htlmfor="name">Address Email</label>
+                        <input type="email" class="form-control" value={email} onChange={(event) => setEmail(event.target.value)} name="email" id="email" required />
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="name">Object</label>
-                        <input type="text" class="form-control" name="subject" id="subject" required />
+                        <label htlmfor="name">Object</label>
+                        <input type="text" class="form-control" value={subject} onChange={(event) => setSubject(event.target.value)} name="subject" id="subject" required />
                     </div>
                     <div class="form-group">
-                        <label for="name">Message</label>
-                        <textarea class="form-control" name="message" rows="10" required></textarea>
+                        <label htlmfor="name">Message</label>
+                        <textarea class="form-control" value={message} onChange={(event) => setMessage(event.target.value)} name="message" rows="10" required></textarea>
                     </div>
                     <div class="my-3">
-                        <div class="loading">Chargement</div>
-                        <div class="error-message"></div>
-                        <div class="sent-message">Votre Email a ete bien envoyer</div>
+                        {successMessage && <div class="sent-message">{successMessage}</div>}
+                        {errorMessage && <div class="error-message">{errorMessage}</div>}
                     </div>
                     <div class="text-center"><button type="submit">Envoyer Votre Message</button></div>
                     </form>

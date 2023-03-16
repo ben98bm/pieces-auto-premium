@@ -60,6 +60,15 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>PAP Group</title>
+    <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"
+  ></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("user_53FPteeuZkyA2O0rrYb2I");
+    })();
+  </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -93,12 +102,18 @@
   $(document).ready(function(){
     // cacher tous les éléments sauf les trois premiers
     $("#content div.col-md-3:gt(3)").hide();
-    
+   
     // activer le bouton "Afficher plus"
     $("#load-more-btn").click(function(){
       $("#content div.col-md-3:gt(3)").show();
       $(this).hide(); // cacher le bouton après avoir cliqué dessus
     });
+  });
+</script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $('#Contact').submit(function() {
+    location.reload();
   });
 </script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>

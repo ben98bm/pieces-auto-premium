@@ -46,6 +46,7 @@ header.sticky li a:hover{
 
 .btn1{
   font-size: 1em;
+  font-family: "Montserrat";
   color: #d6caca;
   font-weight: bold;
   background: #fb1f1f;
@@ -62,6 +63,7 @@ header.sticky li a:hover{
 }
 .btn2{
   font-size: 1em;
+  font-family: "Montserrat";
   font-weight: bold;
   color: #1b1a1a;
   background: #e7d211;
@@ -78,7 +80,7 @@ header.sticky li a:hover{
 }
 
 body {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   color: #d5c7c7;
 }
 
@@ -92,15 +94,30 @@ a:hover {
   text-decoration: none;
 }
 
+p {
+  font-family: "Montserrat";
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: "Jost", sans-serif;
+  font-family: "Montserrat";
 }
 
+label {
+  font-family: "Montserrat";
+}
+
+.text-center {
+  font-family: "Montserrat";
+}
+
+li {
+  font-family: "Montserrat";
+}
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
@@ -213,6 +230,39 @@ h6 {
 # About
 --------------------------------------------------------------*/
 
+.container5 {
+  padding-top: 120px;
+}
+
+.form-group2 {
+  padding-bottom: 20px;
+}
+
+.form-horizontal {
+  /* padding-left: 50px; */
+}
+
+.form-heading {
+  background: #e8cbc0; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #e8cbc0, #adb0bc); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #f0eeec, #c5c7cd); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  margin: 20px 0 20px;
+  padding: 20px;
+}
+
+.form-heading {
+  text-align: center;
+}
+
+.form-heading .prg{
+  color: #ffffff;
+  font-size: 23px;
+}
+
+.inline{
+  display:inline-block
+}
+
 #about .container .col-lg-6 p {
   text-align: justify;
 }
@@ -228,6 +278,10 @@ h6 {
 */
 .navbar {
   padding: 0;
+}
+
+.nav-link {
+  font-family: "Montserrat";
 }
 
 .navbar ul {
@@ -503,7 +557,7 @@ h6 {
 } */
 
 #hero .btn-get-started {
-  font-family: "Jost", sans-serif;
+  font-family: "Montserrat";
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
@@ -571,10 +625,6 @@ h6 {
     line-height: 36px;
     margin: 0 0 10px 0;
   }
-
-  #hero .container {
-  padding-top: 72px;
-}
 
   #hero h2 {
     font-size: 18px;
@@ -768,7 +818,7 @@ section {
 }
 
 .about .content .btn-learn-more {
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat";
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 1px;
@@ -841,7 +891,7 @@ section {
 .why-us .accordion-list a {
   display: block;
   position: relative;
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat";
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
@@ -925,7 +975,7 @@ section {
   font-weight: 700;
   font-size: 32px;
   color: #37517e;
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat";
 }
 
 .skills .content ul {
@@ -960,7 +1010,7 @@ section {
   text-transform: uppercase;
   display: block;
   font-weight: 600;
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat";
   color: #37517e;
 }
 
@@ -1046,7 +1096,7 @@ section {
 }
 
 .cta .cta-btn {
-  font-family: "Jost", sans-serif;
+  font-family: "Montserrat";
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
@@ -1097,7 +1147,7 @@ section {
   transition: all 0.3s;
   padding: 8px 20px;
   border-radius: 50px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat";
 }
 
 .portfolio #portfolio-flters li:hover,
@@ -1361,7 +1411,7 @@ section {
   font-size: 48px;
   color: #37517e;
   font-weight: 400;
-  font-family: "Jost", sans-serif;
+  font-family: "Montserrat";
   margin-bottom: 25px;
 }
 
@@ -1416,7 +1466,7 @@ section {
   transition: none;
   font-size: 16px;
   font-weight: 500;
-  font-family: "Jost", sans-serif;
+  font-family: "Montserrat";
   transition: 0.3s;
   border: 1px solid #47b2e4;
 }
@@ -1486,7 +1536,7 @@ section {
 .faq .faq-list a {
   display: block;
   position: relative;
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat";
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
@@ -1626,6 +1676,7 @@ section {
   padding: 30px;
   background: #fff;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+  margin: 0 0 0px;
 }
 
 .contact .php-email-form .form-group {
@@ -1876,7 +1927,7 @@ section {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: "Jost", sans-serif;
+  font-family: "Montserrat";
   color: #5e5e5e;
 }
 

@@ -62,7 +62,7 @@ return (
                             d’une très large gamme de pièces auto pour toutes les marques européennes, 
                             permettant ainsi une remise en circulation rapide du parc automobile.
                         </h2>
-                        <img src="images/Signature-J-RVB.png" alt="logo" />
+                        <img src="images/Signature-R-RVB.png" alt="logo" />
                         <div class="d-flex flex-column flex-lg-row align-items-center">
                             <Link to="/formulaire"><a href="#" class="btn1">Devis pieces auto</a></Link>
                             <a class="btn2">Diagnostic auto</a>
