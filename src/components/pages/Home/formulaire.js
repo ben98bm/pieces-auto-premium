@@ -8,6 +8,8 @@ import { Link,useHistory } from 'react-router-dom';
 function Formulaire() {
     const history = useHistory();
     const [userType, setUserType] = useState('');
+    const [piece, setPiece] = useState('');
+    const [ref, setRef] = useState('');
     const [vin, setVin] = useState('');
     const [marque, setMarque] = useState('');
     const [model, setModel] = useState('');
@@ -27,6 +29,8 @@ function Formulaire() {
         const userId = '9JEDgP2zfjGmPW_Ln';
         
         emailjs.send(serviceId, templateId, {
+        piece,
+        ref,
         vin,
         marque,
         model,
@@ -37,6 +41,7 @@ function Formulaire() {
         .then((response) => {
             setSuccessMessage('votre message a bien été envoyé.');
             setVin('');
+            setRef('');
             setMarque('');
             setModel('');
             setAnnee('');
@@ -157,6 +162,18 @@ function Formulaire() {
                                 </div>
                             </div>
                                 <form onSubmit={handleModelSubmit} action="script.php" method="post" class="form-horizontal" role="form">
+                                    <div class="form-group">
+                                        <label for="civilite" class="col-sm-6"> pièce demandée :</label>
+                                        <div class="col-sm-8">
+                                            <input type="text" value={piece} onChange={(event) => setPiece(event.target.value)} class="form-control form-control-lg" rows="3" lname="civilite;" pattern=".{17}" id="civilite" required />
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="civilite" class="col-sm-6"> Référence pièce :</label>
+                                        <div class="col-sm-8">
+                                            <input type="text" value={ref} onChange={(event) => setRef(event.target.value)} class="form-control form-control-lg" rows="3" lname="civilite;" pattern=".{17}" id="civilite" required />
+                                        </div>
+                                    </div>
                                     <div class="form-group">
                                         <label for="civilite" class="col-sm-6">Chassis (VIN) :</label>
                                         <div class="col-sm-8">
