@@ -158,7 +158,7 @@ return (
 
                 <div class="row gy-4">
                 <div class="col-lg-6">
-                    <h2>Vente de Pièces Auto</h2>
+                    <h2 class="pie text-center">Vente de Pièces Auto</h2>
                     <img src="images/car-body-disassembled-and-many-vehicles-parts.jpg" class="img-fluid rounded-4 mb-4" alt="" />
                     <p class="fst-italic">
                     <strong 
