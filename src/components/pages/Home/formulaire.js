@@ -178,7 +178,7 @@ function Formulaire() {
                                     <div class="form-group">
                                         <label for="mail" class="col-sm-4">Annee :</label>
                                         <div class="col-sm-8">
-                                            <input type="email" value={annee} onChange={(event) => setAnnee(event.target.value)} class="form-control form-control-lg" name="email" id="email" required />
+                                            <input type="annee" value={annee} onChange={(event) => setAnnee(event.target.value)} class="form-control form-control-lg" name="email" id="email" required />
                                         </div>
                                     </div>
                                     <div class="form-group">
