@@ -196,7 +196,7 @@ return (
                     <br />
                     <div class="position-relative mt-4">
                     <h2>Diagnostic Auto</h2>
-                        <img src="images/valise-diagnostic-auto-multimarque 2.jpg" class="img-fluid rounded-4" alt="dd" />
+                        <img src="images/valise-diagnostic-auto-multimarque 2.png" class="img-fluid rounded-4" alt="dd" />
                         {/* <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox play-btn"></a> */}
                     </div>
                     </div>
