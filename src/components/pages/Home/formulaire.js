@@ -134,7 +134,7 @@ function Formulaire() {
         <div class="container5">
         <div class="nocap position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light text-black">
             <div class="col-md-5 p-lg-5 mx-auto my-5">
-            <h1 class="display-43fw-normal">Formulaire de Diagnostic</h1>
+            <h1 class="display-43fw-normal">Formulaire demande de Devis</h1>
             <p class="lead fw-normal">
                 Pour obtenir un rendez-vous, il suffit de Selectionner 
                 le type de remplissage du Formulaire que vous souhaiter 

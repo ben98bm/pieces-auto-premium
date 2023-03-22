@@ -65,7 +65,7 @@ return (
                         <img src="images/Signature-R-RVB.png" alt="logo" />
                         <div class="d-flex flex-column flex-lg-row align-items-center">
                             <Link to="/formulaire"><a href="#" class="btn1">Devis pieces auto</a></Link>
-                            <a class="btn2">Diagnostic auto</a>
+                            <Link to="/diagnostic"><a class="btn2">Diagnostic auto</a></Link>
                         </div>
                     </div>
                     <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
