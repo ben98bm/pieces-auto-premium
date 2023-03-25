@@ -10,6 +10,16 @@
 # General
 --------------------------------------------------------------*/
 
+hover {
+  outline: none;
+}
+
+.nocap p {
+  display: inline;
+  text-align: justify;
+}
+
+
 #aboutt .container .col-lg-6 h2 {
   padding-top: 40px;
 }
@@ -231,6 +241,10 @@ li {
 --------------------------------------------------------------*/
 
 .container5 {
+  padding-top: 120px;
+}
+
+.container6 {
   padding-top: 120px;
 }
 

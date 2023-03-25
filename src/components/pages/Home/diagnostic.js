@@ -136,9 +136,7 @@ function Diagnostic() {
                 <div class="col-md-5 p-lg-5 mx-auto my-5">
                     <h1 class="display-43fw-normal">Formulaire de Diagnostic</h1>
                         <p class="lead fw-normal">
-                            Pour obtenir un rendez-vous, il suffit de Selectionner 
-                            le type de remplissage du Formulaire que vous souhaiter 
-                            faire ou nous appeler au numéro suivant : 77 628 31 31.
+                            Pour obtenir un rendez-vous, il suffit de remplir du Formulaire ou de nous appeler au numéro suivant : <br /> 77 628 31 31.
                         </p>
                         {/* <a class="btn btn-outline-secondary" href="#">Coming soon</a> */}
                         {/* <label class="lead fw-normal" htmlFor="form-heading">Selectionner le type que vous souhaiter utiliser:</label>
