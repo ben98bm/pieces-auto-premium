@@ -1,4 +1,4 @@
 [[redirects]]
   from = "/*"
-  to = "/formulaire"
-  status = 301
+  to = "/formulaire.js"
+  status = 200
