@@ -132,88 +132,18 @@ function Diagnostic() {
             </div>
         </header>
         <div class="container6">
-            <div class="nocap position-relative overflow-hidden p-3 p-md-2 m-md-2 text-center bg-light text-black">
-                <div class="col-md-5 p-lg-5 mx-auto my-5">
-                    <h1 class="display-43fw-normal">Formulaire de Diagnostic</h1>
+            <div class="nocap position-relative overflow-hidden p-1 p-md-1 m-md-1 text-center bg-light text-black">
+                <div class="col-md-5 p-lg-4 mx-auto my-4">
+                    <h1 class="display-43fw-normal">Demande de Diagnostic</h1>
                         <p class="lead fw-normal">
-                            Pour obtenir un rendez-vous, il suffit de remplir du Formulaire ou de nous appeler au numéro suivant : <br /> 77 628 31 31.
+                            Remplir le formulaire ou appeler nous au numéro suivant : 77 628 31 31.
                         </p>
-                        {/* <a class="btn btn-outline-secondary" href="#">Coming soon</a> */}
-                        {/* <label class="lead fw-normal" htmlFor="form-heading">Selectionner le type que vous souhaiter utiliser:</label>
-                        <select class="btn btn-outline-primary text-black" id="user-type" onChange={handleSelectChange}>
-                            <option value="...">...</option>
-                            <option value="model">Par Model du Vehicule</option>
-                            <option value="carte">Par Carte Grise</option>
-                        </select> */}
                 </div>
                 <div class="product-device shadow-sm d-none d-md-block"></div>
                 <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
             </div>
-            {/* <Header /> */}
                 <div class='container'>
                     <div class='row'>
-                        {/* // <div class="col-lg-12">
-                        //         <div class="col-lg-12">
-                        //     <div class="form-heading">
-                        //         <span class="prg">Par Modèle</span>
-                        //     </div>
-                        // </div>
-                        //     <form onSubmit={handleModelSubmit} action="script.php" method="post" class="form-horizontal" role="form">
-                        //         <div class="form-group">
-                        //             <label for="civilite" class="col-sm-6"> pièce demandée :</label>
-                        //             <div class="col-sm-8">
-                        //                 <input type="text" value={piece} onChange={(event) => setPiece(event.target.value)} class="form-control form-control-lg" rows="3" lname="civilite;" pattern=".{17}" id="civilite" required />
-                        //             </div>
-                        //         </div>
-                        //         <div class="form-group">
-                        //             <label for="civilite" class="col-sm-6"> Référence pièce :</label>
-                        //             <div class="col-sm-8">
-                        //                 <input type="text" value={ref} onChange={(event) => setRef(event.target.value)} class="form-control form-control-lg" rows="3" lname="civilite;" pattern=".{17}" id="civilite" required />
-                        //             </div>
-                        //         </div>
-                        //         <div class="form-group">
-                        //             <label for="civilite" class="col-sm-6">Chassis (VIN) :</label>
-                        //             <div class="col-sm-8">
-                        //                 <input type="text" value={vin} onChange={(event) => setVin(event.target.value)} class="form-control form-control-lg" rows="3" lname="civilite;" pattern=".{17}" id="civilite" required />
-                        //             </div>
-                        //         </div>
-                        //         <div class="form-group">
-                        //             <label for="nom" class="col-sm-6">Marque Vehicule :</label>
-                        //             <div class="col-sm-8">
-                        //                 <input type="text" value={marque} onChange={(event) => setMarque(event.target.value)} class="form-control form-control-lg" name="name" id="nom" required />
-                        //             </div>
-                        //         </div>
-                        //         <div class="form-group">
-                        //             <label for="prenom" class="col-sm-6">Modèle et Serie (Clio, megane...) :</label>
-                        //             <div class="col-sm-8">
-                        //                 <input type="text" value={model} onChange={(event) => setModel(event.target.value)} class="form-control form-control-lg" name="prenom" id="email" required />
-                        //             </div>
-                        //         </div>
-                        //         <div class="form-group">
-                        //             <label for="mail" class="col-sm-4">Annee :</label>
-                        //             <div class="col-sm-8">
-                        //                 <input type="annee" value={annee} onChange={(event) => setAnnee(event.target.value)} class="form-control form-control-lg" name="email" id="email" required />
-                        //             </div>
-                        //         </div>
-                        //         <div class="form-group">
-                        //             <label for="tel" class="col-sm-6">Carburant (Essence ou Diesel :</label>
-                        //             <div class="col-sm-8">
-                        //                 <input type="text" value={carburant} onChange={(event) => setCarburant(event.target.value)} class="form-control form-control-lg" name="tel" id="tel" required />
-                        //             </div>
-                        //         </div>
-                        //         <div class="form-group">
-                        //             <label for="mobile" class="col-sm-2">Mobile :</label>
-                        //             <div class="col-sm-8">
-                        //                 <input type="text" value={telephone} onChange={(event) => setTelephone(event.target.value)} class="form-control form-control-lg" name="mobile" id="mobile" required />
-                        //             </div>
-                        //         </div>
-                        //         <div class="col-xs-12">
-                        //             <button type="submit" class="btn btn-primary">Valider</button>
-                        //         </div>
-                        //     </form>
-                        // </div> */}
-
-
                         <div class="col-lg-12">
                             <div class="col-lg-12">
                             <div class="form-heading">
@@ -234,7 +164,7 @@ function Diagnostic() {
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="mobile" class="col-sm-2">Mobile :</label>
+                                    <label for="mobile" class="col-sm-2"> Téléphone :</label>
                                     <div class="col-sm-8">
                                         <input type="text" value={telephone} onChange={(event) => setTelephone(event.target.value)} class="form-control form-control-lg" name="mobile" id="mobile" required />
                                     </div>

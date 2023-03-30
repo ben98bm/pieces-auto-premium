@@ -132,19 +132,17 @@ function Formulaire() {
             </div>
         </header>
         <div class="container5">
-        <div class="nocap position-relative overflow-hidden p-3 p-md-2 m-md-2 text-center bg-light text-black">
-            <div class="col-md-5 p-lg-5 mx-auto my-5">
-            <h1 class="display-43fw-normal">Formulaire demande de Devis</h1>
+        <div class="nocap position-relative overflow-hidden p-1 p-md-1 m-md-1 text-center bg-light text-black">
+            <div class="col-md-5 p-lg-4 mx-auto my-4">
+            <h1 class="display-43fw-normal">Demande de Devis</h1>
             <p class="lead fw-normal">
-                Pour obtenir un rendez-vous, il suffit de Selectionner 
-                le type de remplissage du Formulaire que vous souhaiter 
-                faire ou nous appeler au numéro suivant : 77 628 31 31.
-            </p>
+                Remplissez le formulaire ou applelez nous au numéro suivant : 77 628 31 31.
+            </p><br />
             {/* <a class="btn btn-outline-secondary" href="#">Coming soon</a> */}
             <label class="lead fw-normal" htmlFor="form-heading">Selectionner le type: </label><br />
             <select class="btn btn-outline-primary text-black" id="user-type" onChange={handleSelectChange}>
                 <option value="...">...</option>
-                <option value="model">Par Model du Vehicule</option>
+                <option value="model">Par Modèle de Vehicule</option>
                 <option value="carte">Par Carte Grise</option>
             </select>
             </div>

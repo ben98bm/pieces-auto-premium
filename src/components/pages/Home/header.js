@@ -160,7 +160,7 @@ return (
                 <div class="col-lg-6">
                     <h2 class="pie text-center">Vente de Pièces Auto</h2>
                     <img src="images/car-body-disassembled-and-many-vehicles-parts.jpg" class="img-fluid rounded-4 mb-4" alt="" />
-                    <p class="fst-italic">
+                    <p class="fst">
                     <strong 
                         style={{fontWeight: "bold"}}>PIÈCES AUTO PREMIUM</strong> vous propose des pièces automobiles neuves et d’occasion 
                         d’origine. Notre société vous garantit l’origine et la qualité des pièces 
@@ -175,7 +175,7 @@ return (
                 </div>
                 <div class="col-lg-6">
                     <div class="content ps-0 ps-lg-5">
-                    <p class="fst-italic">
+                    <p class="fst">
                     <strong style={{fontWeight: "bold"}}>PIÈCES AUTO PREMIUM</strong> vous propose son service de diagnostic 
                         multimarque rapide et fiable par un personnel 
                         qualifié. Notre équipe mobile peut à l’issue du diagnostic, 

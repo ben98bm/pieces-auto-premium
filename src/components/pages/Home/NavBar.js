@@ -417,7 +417,7 @@ function NavBar() {
 
                     <div class="email">
                         <i class="bi bi-envelope"></i>
-                        <h4>Address Email:</h4>
+                        <h4>Adresse Email:</h4>
                         <p>contact@piecesauto-premium.com</p>
                     </div>
 
@@ -435,12 +435,12 @@ function NavBar() {
                 <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
                     <form onSubmit={handleSubmit} id="contact-form" class="php-email-form">
                     <div class="row">
-                        <div class="form-group col-md-6">
-                        <label htlmfor="name">Votre Nom</label>
-                        <input type="text" name="name" value={name} onChange={(event) => setName(event.target.value)} class="form-control" id="name" required />
+                        <div class="form-group  col-md-6">
+                            <label htlmfor="name">Votre Nom</label>
+                            <input type="text" name="name" value={name} onChange={(event) => setName(event.target.value)} class="form-control" id="name" required />
                         </div>
                         <div class="form-group col-md-6">
-                        <label htlmfor="name">Address Email</label>
+                        <label htlmfor="name">Adresse Email</label>
                         <input type="email" class="form-control" value={email} onChange={(event) => setEmail(event.target.value)} name="email" id="email" required />
                         </div>
                     </div>
