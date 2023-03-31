@@ -1694,7 +1694,11 @@ section {
 }
 
 .col-lg-7 .row .form-group input{
-  
+  height: 50px;
+}
+
+#subject {
+  height: 50px;
 }
 
 .contact .php-email-form .validate {
